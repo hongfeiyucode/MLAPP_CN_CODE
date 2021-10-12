@@ -17,7 +17,7 @@ $$
 上式被称为$p\_k$的**凸组合(convex combination)**，因为我们使用了加权求和，且**混合权重(mixing weights)**$\pi\_k$满足$0 \le \pi\_k \le 1$和$\sum\_{k=1}^K \pi\_k=1$。我们将在下面给出一些例子。
 
 <p><img src=".\pic\11.1.png" title="图11.1 一个包含和不包含隐藏变量的DGM。叶子节点代表医学症状。这些根节点代表了主要原因，比如吸烟、节食和锻炼。隐藏变量可以表示中间因素，如心脏病，这可能不是直接可见的."></p>
-![](./pic/11.2.png "图11.2 用DGM表示的潜在变量模型。(a)多对多。(b)一对多。(c)多对一。(d)一对一")
+![](https://github.com/hongfeiyucode/MLAPP_CN_CODE/blob/master/MLAPP_BOOK/MLAPP-C11-%E6%B7%B7%E5%90%88%E6%A8%A1%E5%9E%8B%E4%B8%8EEM%E7%AE%97%E6%B3%95/pic/11.2.png "图11.2 用DGM表示的潜在变量模型。(a)多对多。(b)一对多。(c)多对一。(d)一对一")
 
 
 
@@ -42,9 +42,9 @@ p(\mathbf{x}\_i|\mathbf{\theta})=\sum\_{k=1}^K \pi\_k\mathcal{N}(\mathbf{x}\_i|\
 $$
 图11.3展示了在2维空间下3个高斯分布的混合。每一个混合的基分布表示为一系列椭圆曲线的集合。如果有足够多的混合元素，那么一个$\rm{GMM}$可以用来近似任意定义在$\mathbb{R}^D$上的概率分布。
 
-![](.\pic\11.3\_a.png)
+![](https://github.com/hongfeiyucode/MLAPP_CN_CODE/blob/master/MLAPP_BOOK/MLAPP-C11-%E6%B7%B7%E5%90%88%E6%A8%A1%E5%9E%8B%E4%B8%8EEM%E7%AE%97%E6%B3%95\pic\11.3_a.png)
 
-![](.\pic\11.3\_b.png)
+![](https://github.com/hongfeiyucode/MLAPP_CN_CODE/blob/master/MLAPP_BOOK/MLAPP-C11-%E6%B7%B7%E5%90%88%E6%A8%A1%E5%9E%8B%E4%B8%8EEM%E7%AE%97%E6%B3%95\pic\11.3_b.png)
 
 图11.3 在2维空间下3个高斯分布的混合。(a)每个高斯基分布的等高线；（b)加权和之后的全局概率分布。图形由程序**mixGaussPlotDemo**生成。
 
@@ -108,17 +108,17 @@ z\_i^*={\rm{arg}}\max \limits\_{k} r\_{ik}={\rm{arg}}\max \limits\_{k} \log p(\m
 $$
 图1.8中给出了使用GMM进行硬聚簇的例子，其中我们将一些表示身高和体重的数据进行聚类，不同颜色代表不同类别。值得注意的是，标签所使用的身份并不重要，我们完全可以对所有的簇进行重新命名，且不影响数据的聚类；这被称为**标签置换（label switching）**。
 
-![](.\pic\11.4\_a.png)
+![](https://github.com/hongfeiyucode/MLAPP_CN_CODE/blob/master/MLAPP_BOOK/MLAPP-C11-%E6%B7%B7%E5%90%88%E6%A8%A1%E5%9E%8B%E4%B8%8EEM%E7%AE%97%E6%B3%95\pic\11.4_a.png)
 
 
 
-![](.\pic\11.4\_b.png)
+![](https://github.com/hongfeiyucode/MLAPP_CN_CODE/blob/master/MLAPP_BOOK/MLAPP-C11-%E6%B7%B7%E5%90%88%E6%A8%A1%E5%9E%8B%E4%B8%8EEM%E7%AE%97%E6%B3%95\pic\11.4_b.png)
 
 图 11.4  (a) 一些酵母基因的表达水平随时间的变化;(b)利用K-means形成的16个簇的中心。图形由程序    		**kmeansYeastDemo**生成
 
 另一个例子在图11.4中进行展示。其中数据向量$\mathbf{x}\_i\in\mathbb{R}^7$表示不同基因在7个不同时间点的表达水平。我们使用$ GMM $进行聚类。发现存在几种基因，比如那些表达水平随着时间单调上升的基因（对给定刺激的响应），那些表达水平单调下降的基因，以及那些呈复杂变化趋势的基因。我们将这些基因聚类成$K=16$类。（11.5节将介绍如何确定$K$值。）举例来说，我们可以将每个簇表示为一个**原型（prototype）**或者**质心（centroid）**。图11.4(b)给出了展示。
 
-![11.5](E:\MLAPP翻译\MLAPP_BOOK\MLAPP-C11-混合模型与EM算法\pic\11.5.png)
+![11.5](https://github.com/hongfeiyucode/MLAPP_CN_CODE/blob/master/MLAPP_BOOK/MLAPP-C11-%E6%B7%B7%E5%90%88%E6%A8%A1%E5%9E%8B%E4%B8%8EEM%E7%AE%97%E6%B3%95\pic\11.5.png)
 
 图 11.5 针对二值化的手写数字训练一个混合模型，该混合模型由10个伯努利分布组成。我们展示了对应的簇期望$\mathbf{\mu}\_k$的MLE。每张图片上方的数字代表了混合权重$\hat{\pi}\_k$。在训练的过程中，没有使用标签数据。图形由程序**mixBerMnistEM**生成。
 
@@ -144,7 +144,7 @@ $$
 Figure11.6
 $$
 
-![11.7](.\pic\11.7.png)
+![11.7](https://github.com/hongfeiyucode/MLAPP_CN_CODE/blob/master/MLAPP_BOOK/MLAPP-C11-%E6%B7%B7%E5%90%88%E6%A8%A1%E5%9E%8B%E4%B8%8EEM%E7%AE%97%E6%B3%95\pic\11.7.png)
 $$
 Figure11.7   (a)混合专家(b)分层混合专家
 $$
