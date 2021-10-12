@@ -17,7 +17,7 @@ $$
 上式被称为$p\_k$的**凸组合(convex combination)**，因为我们使用了加权求和，且**混合权重(mixing weights)**$\pi\_k$满足$0 \le \pi\_k \le 1$和$\sum\_{k=1}^K \pi\_k=1$。我们将在下面给出一些例子。
 
 <p><img src=".\pic\11.1.png" title="图11.1 一个包含和不包含隐藏变量的DGM。叶子节点代表医学症状。这些根节点代表了主要原因，比如吸烟、节食和锻炼。隐藏变量可以表示中间因素，如心脏病，这可能不是直接可见的."></p>
-![](https://github.com/hongfeiyucode/MLAPP_CN_CODE/blob/master/MLAPP_BOOK/MLAPP-C11-%E6%B7%B7%E5%90%88%E6%A8%A1%E5%9E%8B%E4%B8%8EEM%E7%AE%97%E6%B3%95/pic/11.2.png "图11.2 用DGM表示的潜在变量模型。(a)多对多。(b)一对多。(c)多对一。(d)一对一")
+<p><img src="./pic/11.2.png"></p> "图11.2 用DGM表示的潜在变量模型。(a)多对多。(b)一对多。(c)多对一。(d)一对一"
 
 
 
